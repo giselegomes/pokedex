@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const Searchbar = () => {
+const Searchbar = (props) => {
+  const {onSearch}  = props
   const [search, setSearch] = useState("dito");
   //evento
   const onChangeHandler = (e) => {
@@ -9,7 +10,7 @@ const Searchbar = () => {
   };
 
   const onButtonClickHandler = () => {
-    console.log("pokemon: ", search);
+    onSearch(search)
   }
   return (
     <div className="searchbar">

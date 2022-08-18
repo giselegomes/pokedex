@@ -32,7 +32,6 @@ const Searchbar = () => {
             <div>Name: {pokemon.name}</div>
             <div>Weigh: {pokemon.weight}</div>
             <img src={pokemon.sprites.front_default} alt="pokemon.name" />
-
         </div>
       ) : null}
     </div>
